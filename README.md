@@ -43,7 +43,7 @@ Follow these steps to set up the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/cloudy-weather-app.git
+git clone https://github.com/muskan464/cloudy-weather-app.git
 cd cloudy-weather-app
 ```
 
@@ -56,7 +56,22 @@ WEATHER_API_KEY=your_openweathermap_api_key
 WEATHER_BASE_URL=https://api.openweathermap.org/data/2.5/
 ```
 
-> ☑️ **Note**: The API key is kept secure and excluded from Git using `.gitignore`.
+> ☑️ **Note**: Access them in build.gradle (App-level)
+
+
+Edit your app/build.gradle:
+```bash
+android {
+    ...
+
+    defaultConfig {
+        ...
+        buildConfigField "String", "WEATHER_API_KEY", "\"${project.properties['WEATHER_API_KEY']}\""
+        buildConfigField "String", "WEATHER_BASE_URL", "\"${project.properties['WEATHER_BASE_URL']}\""
+    }
+}
+```
+
 
 ### 3. Build and Run
 
