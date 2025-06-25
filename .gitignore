@@ -1,0 +1,37 @@
+# =======================
+# Android & Android Studio
+# =======================
+
+# IDE files
+.idea/
+*.iml
+
+# Local settings
+local.properties
+
+# Build and gradle
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+out/
+
+# Android specific
+*.apk
+*.aar
+
+# Keystore
+*.jks
+
+# Crash reports
+*.stacktrace
+
+# OS/Tool specific
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+
+# Node
+node_modules/
