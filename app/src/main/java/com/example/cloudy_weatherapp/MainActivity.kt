@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     private val apiKey = BuildConfig.WEATHER_API_KEY
     private val baseUrl = BuildConfig.WEATHER_BASE_URL
 
-    // 🔄 Auto-tracking enabled by default
+
     private var isAutoLocationEnabled = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
                 query?.let {
                     fetchWeatherDataByCity(it)
 
-                    // 🛑 Stop location updates after search
+
                     fusedLocationClient.removeLocationUpdates(locationCallback)
                     isAutoLocationEnabled = false
                     Log.d("MyApp", "Auto-tracking stopped after search")
