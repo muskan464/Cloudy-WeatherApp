@@ -218,7 +218,7 @@ class MainActivity : AppCompatActivity() {
             }
             else -> {
                 binding.lottieAnimationView.setAnimation(R.raw.sun)
-                videoUri = Uri.parse("android.resource://${packageName}/raw/sunny_video2")
+                videoUri = Uri.parse("android.resource://${packageName}/raw/sunny_video")
             }
         }
 
