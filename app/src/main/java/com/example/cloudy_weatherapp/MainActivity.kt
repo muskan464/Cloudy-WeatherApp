@@ -204,11 +204,11 @@ class MainActivity : AppCompatActivity() {
                 binding.lottieAnimationView.setAnimation(R.raw.cloud)
                 videoUri = Uri.parse("android.resource://${packageName}/raw/cloudy_video")
             }
-            "Light Rain", "Drizzle", "Moderate Rain", "Showers", "Heavy Rain" -> {
+            "Light Rain", "Drizzle", "Moderate Rain", "Showers", "Heavy Rain" , "Rain"-> {
                 binding.lottieAnimationView.setAnimation(R.raw.rain)
-                videoUri = Uri.parse("android.resource://${packageName}/raw/rainy_video")
+                videoUri = Uri.parse("android.resource://${packageName}/raw/rainy_video2")
             }
-            "Light Show", "Moderate Show", "Heavy Snow", "Blizzard" -> {
+            "Light Show", "Moderate Show", "Heavy Snow", "Blizzard" , "Snow" -> {
                 binding.lottieAnimationView.setAnimation(R.raw.snow)
                 videoUri = Uri.parse("android.resource://${packageName}/raw/snow_video")
             }
