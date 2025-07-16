@@ -26,7 +26,7 @@ Cloudy Weather App is a sleek, minimalist Android application that provides **re
 
 | Technology     | Purpose                             |
 | -------------- | ----------------------------------- |
-| Kotlin / Java  | Core development (Android)          |
+| Kotlin       | Core development (Android)          |
 | Retrofit       | Fetches weather data from the API   |
 | Gson           | Parses JSON data from the API       |
 | Lottie         | Provides animated weather icons     |
